@@ -562,3 +562,12 @@ svg {
     height: 500px;
     border: none;
 }
+
+/* Section divider */
+.section-divider {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #444, #999, #444);
+    width: 90%;
+    margin: 40px auto;
+}
