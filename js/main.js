@@ -24,3 +24,39 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+  // contact form
+  emailjs.init("izkbmmtwBM8D96Jvt");
+
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const form = this;
+
+      // 1. Skicka auto-reply till användaren
+      emailjs.sendForm("service_h9dpbp6", "template_wc2xxz9", form)
+          .then(function() {
+              console.log("Auto-reply sent to user");
+          }, function(error) {
+              console.error("Auto-reply error:", error);
+          });
+
+      // 2. Skicka notis till dig själv
+      emailjs.sendForm("service_h9dpbp6", "template_mh76r4s", form)
+          .then(function() {
+              Swal.fire({
+                  icon: "success",
+                  title: "Skickat!",
+                  text: "Ditt meddelande har skickats, kolla också din skräppost för en bekräftelse.",
+                  confirmButtonColor: "#6c63ff"
+              });
+              form.reset();
+          }, function(error) {
+              Swal.fire({
+                  icon: "error",
+                  title: "Fel",
+                  text: "Meddelandet kunde inte skickas. Försök igen senare.",
+                  confirmButtonColor: "#6c63ff"
+              });
+              console.error("Notification error:", error);
+          });
+  });

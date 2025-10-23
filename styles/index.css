@@ -135,7 +135,7 @@ header .navbar {
 .hero-section .hero-details .title {
     font-size: var(--font-size-xxl);
     color: var(--white-color);
-    font-family: "Miniver", sans-serif;
+    /*font-family: "Miniver", sans-serif; */
 }
 
 .hero-section .hero-details .subtitle {
@@ -541,4 +541,24 @@ svg {
 .contact-section .contact-form .submit-button:hover {
     color: var(--primary-color);
     background: transparent;
+}
+
+/* map */
+.map-container {
+    width: 100%;
+    padding: 2rem 0; /* Add some vertical spacing */
+    background-color: var(--color-background);
+}
+
+.map-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-container iframe {
+    width: 90%;
+    max-width: 1200px;
+    height: 500px;
+    border: none;
 }
