@@ -3,9 +3,350 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Scalp Micropigmentation</title>
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar section-content">
+            <div class="nav-logo">
+                <a href="#main">
+                    <h2 class="nav-text">SMP BY RAY</h2>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+
+                <li class="nav-item">
+                    <a href="#main" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Om</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Exempel bild</a>
+                </li>
+                <!--<li class="nav-item">
+                    <a href="#" class="nav-link">Recensioner</a>
+                </li> -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Kontakt</a>
+                </li>
+            </ul>
+
+            <button id="menu-open-button" class="fas fa-bars"></button>
+
+        </nav>
+    </header>
+    <main id="main">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="section-content">
+                <div class="hero-details">
+                    <h2 class="title">Scalp Micropigmentation Göteborg</h2>
+                    <h3 class="subtitle">Naturligt resultat – trygg behandling – certifierad SMP-artist</h3>
+                    <p class="description">Scalp Micropigmentation (SMP) är en avancerad pigmentteknik som återskapar illusionen av hår på hjässa, hårlinje eller ärr. </p>
+                    <div class="buttons">
+                        <a href="#" class="button order-now">Läs mer</a>
+                        <a href="#" class="button contact-us">Kontakta oss</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="/img/smp-logo-no-bg-white.png" alt="" class="hero-image">
+                </div>
+            </div>
+        </section>
+        <!-- About Section -->
+         <section class="about-section" id="about">
+            <div class="section-content">
+                <div class="about-image-wrapper">
+                    <img src="/img/smp-logo.png" alt="" class="about-image">
+                </div>
+                    <div class="about-details">
+                        <h2 class="section-title">Om oss</h2>
+                        <p class="text">På SMP by Ray hjälper vi dig att få tillbaka ditt självförtroende genom Scalp Micropigmentation – en avancerad metod som återskapar intrycket av en naturlig hårlinje eller fyller ut tunnhåriga områden.</p>
+                        <div class="social-link-list">
+                            <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fa-brands fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <!-- Before and After Section -->
+        <section class="before-and-after">
+        <div class="before-and-after-container">
+            <div class="image-container">
+            <img
+                class="image-before slider-image"
+            src="img/before.png"
+                alt="Before"
+            />
+            <img
+                class="image-after slider-image"
+                src="img/after.png"
+                alt="after"
+            />
+            </div>
+            <!-- step="10" -->
+            <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            aria-label="Percentage of before photo shown"
+            class="slider"
+            />
+            <div class="slider-line" aria-hidden="true"></div>
+            <div class="slider-button" aria-hidden="true">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                viewBox="0 0 256 256"
+            >
+                <rect width="256" height="256" fill="none"></rect>
+                <line
+                x1="128"
+                y1="40"
+                x2="128"
+                y2="216"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+                ></line>
+                <line
+                x1="96"
+                y1="128"
+                x2="16"
+                y2="128"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+                ></line>
+                <polyline
+                points="48 160 16 128 48 96"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+                ></polyline>
+                <line
+                x1="160"
+                y1="128"
+                x2="240"
+                y2="128"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+                ></line>
+                <polyline
+                points="208 96 240 128 208 160"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+                ></polyline>
+            </svg>
+            </div>
+        </div>
+        </section>
+         <!-- Testimonials Section 
+         <section class="testimonials-section">
+            <h2 class="section-title"></h2>
+            <div class="section-content">
+                <div class="slider-container">
+                    <div class="slider-wrapper">
+                        <ul class="tesimonials-list">
+                            <li class="testimonial">
+                                <img src="" alt="User" class="user-image">
+                                <div class="overlay">
+                                    <img src="" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+         </section>-->
+        <section class="faq-section">
+            <h2 class="faq-title">FAQs</h2>
+
+            <div class="faq-container">
+                <div class="faq-questions">
+                    <h3>Vad är Scalp Micropigmentation (SMP)?</h3>
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" 
+                        stroke="white" 
+                        stroke-width="7" 
+                        stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="faq-answer">
+                    <p>
+                        SMP är en kosmetisk behandling där mikroskopiska pigmentprickar appliceras 
+                        i hårbotten för att återskapa intrycket av rakad eller tät hårväxt.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-questions">
+                    <h3>Vem passar behandlingen för?</h3>
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="faq-answer">
+                    <p>Har begynnande håravfall eller tunnhårighet</p>
+                    <p>Vill dölja ärr (t.ex. efter hårtransplantation)</p>
+                    <p>Vill förstärka en befintlig hårlinje</p>
+                    <p>Har alopecia eller fläckvist håravfall</p>
+                </div>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-questions">
+                    <h3>Gör det ont?</h3>
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="faq-answer">
+                    <p>Nej, de flesta beskriver det som lätt obehag eller ett milt stickande.</p>
+                </div>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-questions">
+                    <h3>Hur många behandlingar behövs?</h3>
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="faq-answer">
+                    <p>Vanligtvis 2–3 sessioner med ca 7–14 dagars mellanrum. Antalet beror på hudtyp, täckningsområde och önskat resultat.</p>
+                </div>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-questions">
+                    <h3>Vad kostar det?</h3>
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="faq-answer">
+                    <p>Priset beror på hur stort område som ska behandlas. Exempel:</p>
+                    <p>Full skalp: 10 000 kr</p>
+                    <p>Framdel/Hårlinje: 6 000 kr</p>
+                    <p>Ärr: från 2 500 kr</p>
+                    <p>Kostnadsfri konsultation ingår alltid.</p>
+                </div>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-questions">
+                    <h3>Hur ska jag ta hand om min SMP efteråt?</h3>
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="faq-answer">
+                    <p>Undvik svettning, bastu och sol i 4–5 dagar</p>
+                    <p>Inga rakningar på området första veckan</p>
+                    <p>Återfukta med rekommenderad kräm efter dag 4</p>
+                </div>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-questions">
+                    <h3>Är det säkert?</h3>
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="faq-answer">
+                    <p>Ja. Jag är certifierad SMP-artist och använder sterila, engångsnålar och säkra pigment av hög kvalitet.</p>
+                </div>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-questions">
+                    <h3>Hur länge håller SMP?</h3>
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="faq-answer">
+                    <p>Resultatet håller i 3–6 år. En touch-up rekommenderas efter 2–3 år beroende på hudtyp, livsstil och solvanor.</p>
+                </div>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-questions">
+                    <h3>Kan jag boka en konsultation först?</h3>
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="faq-answer">
+                    <p>Ja, det är gratis och tar ca 20–30 minuter. Vi går igenom din hårsituation, dina mål och svarar på alla frågor du har.</p>
+                </div>
+            </div>
+        </section>
+            <!-- Contact Section -->
+
+
+         <section class="contact-section" id="kontakt">
+            <h2 class="section-title">Kontakta oss</h2>
+            <div class="section-content">
+                <ul class="contact-info-list">
+                    <li class="contact-info">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <p>Kungsgatan 11</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p><a href="mailto:smpbyray@gmail.com">smpbyray@gmail.com</a></p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p><a href="tel:+46763070498">076 1698 946</a></p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-globe"></i>
+                        <p>www.smpbyray.com</p>
+                    </li>
+                </ul>
+
+                <form action="#" class="contact-form">
+                    <input type="text" placeholder="Your name" class="form-input" required>
+                    <input type="email"  placeholder="Your email" class="form-input" required>
+                    <textarea placeholder="Your message" class="form-input"></textarea>
+                    <button class="submit-button">Skicka</button>
+                </form>
+            </div>
+         </section>
+    </main>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
